@@ -26,3 +26,9 @@ The navigation didn't work, nor was it what I wanted. I now will `npm install re
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step2a-Prompt.PNG "Step 2a - Prompt")
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step2a.PNG "Step 2a - PNG")
+
+## Step 3
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step3-Prompt.PNG "Step 3 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step3.PNG "Step 3 - PNG")
+

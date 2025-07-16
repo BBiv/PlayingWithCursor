@@ -1,19 +1,14 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Calendar from './Pages/Calendar';
 import ToDo from './Pages/ToDo';
 import Profile from './Pages/Profile';
+import BottomNav from './components/BottomNav';
 
 function Home() {
   return (
     <div className="page">
       <h1>Home Page</h1>
-      
-      <div className="navigation-buttons">
-        <Link to="/calendar"><button>Calendar</button></Link>
-        <Link to="/todo"><button>ToDo</button></Link>
-        <Link to="/profile"><button>Profile</button></Link>
-      </div>
     </div>
   );
 }
@@ -31,6 +26,7 @@ function App() {
                 <Route path="/todo" element={<ToDo />} />
                 <Route path="/profile" element={<Profile />} />
               </Routes>
+              <BottomNav />
             </div>
           </div>
         </div>
