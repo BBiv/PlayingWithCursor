@@ -1,6 +1,6 @@
 ﻿# PlayingWithCursor Changelog
 
-# Step 0 - React Setup
+## Step 0 - React Setup
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step0.PNG "Step 0 - PNG")
 
@@ -60,3 +60,13 @@ Prompt text: For the Profile page, let's include a profile photo, the user's nam
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step5-Prompt.PNG "Step 5 - Prompt")
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step5.PNG "Step 5 - PNG")
+
+## Step 6
+
+Prompt text: Let's spice it up even more! Make the profile photo a little bigger, and fill the space with an actual photo instead of text. Locke Cole, perhaps? Under the photo, greet the person with "Hi, [first name]!". Then, under all that, each section of name, email, and push notifications should be labeled with the name of the section (bigger, bold text) and the value underneath.
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step6-Prompt.PNG "Step 6 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step6.PNG "Step 6 - PNG")
+
+Great layout! ...I'll fix its tiny UI mistakes later.
+

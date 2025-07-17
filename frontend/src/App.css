@@ -72,24 +72,71 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 300px;
-  gap: 30px;
+  max-width: 320px;
+  gap:25px;
 }
 
 .profile-photo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom:15px;
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  border: 4px solid #57E1FF;
+  width:150px;
+  height: 150px;
+  border-radius:75px;
+  border:4px solid #57E1FF;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(87, 225, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(87, 225, 255, 0.4);
+}
+
+.profile-greeting {
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.profile-greeting h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.profile-sections {
+  width: 100%;
+  max-width:300px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius:12px;
+  border:1px solid #e9e9e9;
+}
+
+.section-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin:0px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.section-value {
+  font-size: 16px;
+  color: #666;
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
 .profile-info {
@@ -119,10 +166,9 @@
 
 .setting-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 16px 0;
-  border-bottom: 1px solid #eee;
+  padding: 8px 0;
 }
 
 .setting-label {
