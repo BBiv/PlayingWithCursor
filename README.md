@@ -41,3 +41,22 @@ Prompt text: Change the buttons to a selectable nav bar at the bottom. Should ha
 - Fixed misc alignment issues
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step3a.PNG "Step 3a - PNG")
+
+## Step 4
+
+I want to test Cursor's functionality of removing integral parts of the already-built system. Let's remove a tab... and hope it goes well!
+
+Prompt text: Please remove the Home page in its entirety, as it is unnecessary. Make the Profile page our new entry point.
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step4-Prompt.PNG "Step 4 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step4.PNG "Step 4 - PNG")
+
+
+## Step 5
+
+Magic. Now that the navigation skeleton is up and working, let's work on the pages, starting with Profile.
+
+Prompt text: For the Profile page, let's include a profile photo, the user's name (First Last), the user's email, and a slider denoting Notifications, toggled off by default. These should be in the center column of the screen, with greater emphasis on the photo
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step5-Prompt.PNG "Step 5 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step5.PNG "Step 5 - PNG")

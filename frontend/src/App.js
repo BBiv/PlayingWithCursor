@@ -5,14 +5,6 @@ import ToDo from './Pages/ToDo';
 import Profile from './Pages/Profile';
 import BottomNav from './components/BottomNav';
 
-function Home() {
-  return (
-    <div className="page">
-      <h1>Home Page</h1>
-    </div>
-  );
-}
-
 function App() {
   return (
     <Router>
@@ -21,7 +13,7 @@ function App() {
           <div className="iphone-screen">
             <div className="iphone-content">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Profile />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/todo" element={<ToDo />} />
                 <Route path="/profile" element={<Profile />} />

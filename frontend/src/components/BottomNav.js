@@ -10,16 +10,13 @@ function BottomNav() {
 
   return (
     <div className="bottom-nav">
-      <Link to="/" className={`nav-tab ${isActive('/') ? 'active' : ''}`}>
-        <span>Home</span>
-      </Link>
       <Link to="/calendar" className={`nav-tab ${isActive('/calendar') ? 'active' : ''}`}>
         <span>Calendar</span>
       </Link>
       <Link to="/todo" className={`nav-tab ${isActive('/todo') ? 'active' : ''}`}>
         <span>ToDo</span>
       </Link>
-      <Link to="/profile" className={`nav-tab ${isActive('/profile') ? 'active' : ''}`}>
+      <Link to="/" className={`nav-tab ${isActive('/') || isActive('/profile') ? 'active' : ''}`}>
         <span>Profile</span>
       </Link>
     </div>
