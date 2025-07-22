@@ -70,3 +70,26 @@ Prompt text: Let's spice it up even more! Make the profile photo a little bigger
 
 Great layout! ...I'll fix its tiny UI mistakes later.
 
+## Step 7
+
+Prompt text: I've added an image of Locke Cole for you, under frontend/Images/LockColePFP.webp. Please fill the photo with his beautiful face, and make sure it is aligned appropriately. Next, add an "Edit" option in the top right corner. When toggled (with appropriate visual indication), it should let a user edit their Name and Email. You decide how they will look, but make sure they are able to be edited at the same tim end in the same way.
+
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7-Prompt.PNG "Step 7 - Prompt")
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7Error.PNG "Step 7 - ERROR")
+
+I spent 5 mintues trying to figure out why the module wasn not found... turns out, I spelled his name wrong in the filepath. LOL. At least the AI listened! The next step would be to spellcheck me... (and grammar check holy moly). Lesson learned.
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7.PNG "Step 7 - PNG")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7Edit.PNG "Step 7 - Edit Screen")
+
+## Step 8
+
+There is a weird CSS difference with the edit toggle, but that's okay. Eventually, a backend will be useful for saving the Name and Email, so right now those can only be changed locally and will be reset upon startup. Let's move on to bigger and better things. 
+
+Prompt text: That's enough with the profile screen, thank you. Now for the Calendar page: Please create a monthly calendar view, complete with every week and every day of the year 2025 similar to how one would have a physical calendar. I want to be able to change the month by clicking on the year and have the main view reflect that decision. For flair, make the columns alternate between white and a faded sky blue. 
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step8-Prompt.PNG "Step 8 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step8.PNG "Step 8 - PNG")
+
