@@ -93,3 +93,12 @@ Prompt text: That's enough with the profile screen, thank you. Now for the Calen
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step8-Prompt.PNG "Step 8 - Prompt")
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step8.PNG "Step 8 - PNG")
 
+## Step 9
+
+Prompt text: Please center the calendar itself and make the month/year slightly bigger. Nex, let's make an "Add Event" button on the bottom (also fairly prominent), with a popup UI to fill in the Title, Start Date and Time, and End Date and Time. Upon submission of the Event, it should have an indicator on the day(s) in which it lands. A user should be able to click on any date square and see events planned, or the text "No events!"
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9-Prompt.PNG "Step 8 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9Event.PNG "Step 8 - Add Event")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9Calendar.PNG "Step 8 - Calendar")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9View.PNG "Step 8 - View Day")
+
