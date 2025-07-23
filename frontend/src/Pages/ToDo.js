@@ -6,17 +6,20 @@ const PRIORITY = [
   { value: 'low', label: 'Low' }
 ];
 
+// For Calendar integration
+export let todoTasksForCalendar = [];
+
 function ToDo() {
   const [tasks, setTasks] = useState([]);
   const [addOpen, setAddOpen] = useState(false);
   const [title, setTitle] = useState('');
   const [due, setDue] = useState('');
-  const [priority, setPriority] = useState('high');
+  const [priority, setPriority] = useState('medium');
 
   function handleAddTask(e) {
     e.preventDefault();
     if (!title || !due) return;
-    setTasks([
+    const newTasks = [
       ...tasks,
       {
         id: Date.now(),
@@ -25,7 +28,9 @@ function ToDo() {
         priority,
         completed: false
       }
-    ]);
+    ];
+    setTasks(newTasks);
+    todoTasksForCalendar = newTasks;
     setAddOpen(false);
     setTitle('');
     setDue('');
@@ -33,12 +38,19 @@ function ToDo() {
   }
 
   function handleToggleComplete(id) {
-    setTasks(tasks.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
+    const newTasks = tasks.map(t => t.id === id ? { ...t, completed: !t.completed } : t);
+    setTasks(newTasks);
+    todoTasksForCalendar = newTasks;
+  }
+
+  function handleDeleteTask(id) {
+    const newTasks = tasks.filter(t => t.id !== id);
+    setTasks(newTasks);
+    todoTasksForCalendar = newTasks;
   }
 
   // Order: High > Medium > Low, then by due date
   const orderedTasks = tasks
-    .filter(t => !t.completed)
     .sort((a, b) => {
       const pOrder = { high: 0, medium: 1, low: 2 };
       if (pOrder[a.priority] !== pOrder[b.priority]) {
@@ -73,7 +85,7 @@ function ToDo() {
         ) : (
           <ul className="todo-list">
             {orderedTasks.map(task => (
-              <li key={task.id} className={`todo-task todo-priority-${task.priority}`}>
+              <li key={task.id} className={`todo-task todo-priority-${task.priority}${task.completed ? ' todo-completed' : ''}`}>
                 <label className="todo-checkbox-label">
                   <input
                     type="checkbox"
@@ -89,6 +101,11 @@ function ToDo() {
                     <span className="todo-task-priority todo-priority-label">{PRIORITY.find(p => p.value === task.priority).label}</span>
                   </div>
                 </div>
+                <button className="todo-delete-btn" title="Delete Task" onClick={() => handleDeleteTask(task.id)}>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.5" y="9.5" width="11" height="2" rx="1" fill="#ff5e5e"/>
+                  </svg>
+                </button>
               </li>
             ))}
           </ul>

@@ -79,7 +79,7 @@ Prompt text: I've added an image of Locke Cole for you, under frontend/Images/Lo
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7Error.PNG "Step 7 - ERROR")
 
-I spent 5 mintues trying to figure out why the module wasn not found... turns out, I spelled his name wrong in the filepath. LOL. At least the AI listened! The next step would be to spellcheck me... (and grammar check holy moly). Lesson learned.
+I spent 5 mintues trying to figure out why the module was not found... turns out, I spelled his name wrong in the filepath. LOL. At least the AI listened perfectly! The next step would be to spellcheck me... (and grammar check, holy moly). Lesson learned.
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7.PNG "Step 7 - PNG")
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step7Edit.PNG "Step 7 - Edit Screen")
@@ -111,3 +111,15 @@ Prompt text: Please center the Calendar page items vertically this time as well 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10ToDo.PNG "Step 10 - ToDo")
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10Task.PNG "Step 10 - Add Task")
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10View.PNG "Step 10 - View")
+
+## Step 11
+
+Prompt text: Now let a user check the checkbox without the task disappearing, and let's have the user decide to remove a task. Indicate a Delete icon in the rightmost portion of each task. Also, have ToDo tasks appear on the Calendar as events on their due date, with a slight distinction to tell them apart such as a tag labeled "TASK".
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step11-Prompt.PNG "Step 11 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step11ToDo.PNG "Step 11 - ToDo")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step11Calendar.PNG "Step 11 - Calendar")
+
+Interesting. Upon switching to the Calendar page and back to the ToDo list page, it removed the event. Clearly, it was there before. Time to troubleshoot...
+
+I suspect that this is due to lack of a proper backend to store information. I found that there is similar behavior for the Calendar events when leaving the page and coming back, which confirms my suspicions. If I add a backend, it'll solve this issue. Let's do that!

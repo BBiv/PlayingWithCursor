@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { todoTasksForCalendar } from './ToDo';
 
 const MONTHS = [
   'January', 'February', 'March', 'April', 'May', 'June',
@@ -52,19 +53,32 @@ function Calendar() {
     if (currentDay > daysInMonth) break;
   }
 
-  // Find if a day has events
+  // Find if a day has events (including ToDo tasks)
   function hasEvent(day) {
     const key = formatDateKey(year, month, day);
-    return events[key] && events[key].length > 0;
+    const todoEvents = todoTasksForCalendar.filter(
+      t => !t.completed && t.due === key
+    );
+    return (events[key] && events[key].length > 0) || todoEvents.length > 0;
   }
 
-  // Get events for a day
+  // Get events for a day (including ToDo tasks)
   function getEvents(day) {
     const key = formatDateKey(year, month, day);
-    return events[key] || [];
+    const calendarEvents = events[key] || [];
+    const todoEvents = todoTasksForCalendar.filter(
+      t => !t.completed && t.due === key
+    ).map(t => ({
+      title: t.title,
+      start: t.due,
+      end: t.due,
+      isTask: true,
+      priority: t.priority
+    }));
+    return [...calendarEvents, ...todoEvents];
   }
 
-  // Add event logic
+  // Add event logic (unchanged)
   function handleAddEvent(e) {
     e.preventDefault();
     if (!eventTitle || !eventStart || !eventEnd) return;
@@ -185,9 +199,14 @@ function Calendar() {
               ) : (
                 getEvents(viewDay).map((ev, idx) => (
                   <div key={idx} className="calendar-event-item">
-                    <div className="calendar-event-title">{ev.title}</div>
+                    <div className="calendar-event-title">
+                      {ev.title} {ev.isTask && <span className="calendar-task-tag">TASK</span>}
+                    </div>
                     <div className="calendar-event-time">
-                      {new Date(ev.start).toLocaleString()} - {new Date(ev.end).toLocaleString()}
+                      {ev.isTask
+                        ? 'Due: ' + new Date(ev.start).toLocaleDateString()
+                        : new Date(ev.start).toLocaleString() + ' - ' + new Date(ev.end).toLocaleString()
+                      }
                     </div>
                   </div>
                 ))
