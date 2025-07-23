@@ -1,6 +1,6 @@
 ﻿# PlayingWithCursor Changelog
 
-## Step 0 - React Setup
+## Step 0 - Manual React Setup
 
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step0.PNG "Step 0 - PNG")
 
@@ -65,8 +65,9 @@ Prompt text: For the Profile page, let's include a profile photo, the user's nam
 
 Prompt text: Let's spice it up even more! Make the profile photo a little bigger, and fill the space with an actual photo instead of text. Locke Cole, perhaps? Under the photo, greet the person with "Hi, [first name]!". Then, under all that, each section of name, email, and push notifications should be labeled with the name of the section (bigger, bold text) and the value underneath.
 
+[Image got lost somewhere. Not sure what happened, but it looks like Step 7's image just without the pfp and edit button]
+
 ![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step6-Prompt.PNG "Step 6 - Prompt")
-![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step6.PNG "Step 6 - PNG")
 
 Great layout! ...I'll fix its tiny UI mistakes later.
 
@@ -123,3 +124,7 @@ Prompt text: Now let a user check the checkbox without the task disappearing, an
 Interesting. Upon switching to the Calendar page and back to the ToDo list page, it removed the event. Clearly, it was there before. Time to troubleshoot...
 
 I suspect that this is due to lack of a proper backend to store information. I found that there is similar behavior for the Calendar events when leaving the page and coming back, which confirms my suspicions. If I add a backend, it'll solve this issue. Let's do that!
+
+## Step 12
+
+Prompt text: Let's add a backend to our project.
