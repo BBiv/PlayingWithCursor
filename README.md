@@ -97,8 +97,17 @@ Prompt text: That's enough with the profile screen, thank you. Now for the Calen
 
 Prompt text: Please center the calendar itself and make the month/year slightly bigger. Nex, let's make an "Add Event" button on the bottom (also fairly prominent), with a popup UI to fill in the Title, Start Date and Time, and End Date and Time. Upon submission of the Event, it should have an indicator on the day(s) in which it lands. A user should be able to click on any date square and see events planned, or the text "No events!"
 
-![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9-Prompt.PNG "Step 8 - Prompt")
-![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9Event.PNG "Step 8 - Add Event")
-![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9Calendar.PNG "Step 8 - Calendar")
-![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9View.PNG "Step 8 - View Day")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9-Prompt.PNG "Step 9 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9Event.PNG "Step 9 - Add Event")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9Calendar.PNG "Step 9 - Calendar")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step9View.PNG "Step 9 - View Day")
 
+## Step 10
+
+Prompt text: Please center the Calendar page items vertically this time as well as horizontally. Afterward, let's tackle the ToDo page. A blank list should be a good thing, so creatively show that. Otherwise, in the top right, there should be an icon to denote Adding a ToDo List task, item, etc. A UI should popup similar to the Calendar page, with fields to enter its Title, Due Date, and priority (High, Medium, and Low). As for the general view with tasks that have yet to be fulfilled, tasks have a checkbox to their left (centered with the text) that, when checked, signify completion. Tasks shall be ordered top-down with a default filter of higher priority tasks on top.
+
+
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10-Prompt.PNG "Step 10 - Prompt")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10ToDo.PNG "Step 10 - ToDo")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10Task.PNG "Step 10 - Add Task")
+![alt text](https://github.com/BBiv/PlayingWithCursor/blob/main/PictureJourney/Step10View.PNG "Step 10 - View")
