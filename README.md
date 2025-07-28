@@ -127,4 +127,25 @@ I suspect that this is due to lack of a proper backend to store information. I f
 
 ## Step 12
 
-Prompt text: Let's add a backend to our project.
+Let's add a backend to our project. But first, I want to use Cursor to give me recommendations.
+
+Prompt text: Please give me some recommendations for a backend framework that would be the most ideal framework to suit this project.
+
+To summarize, it recommended me Node.js + Express.js as well as Python + FastAPI, and Python + Django REST Framework; each with their own upsides and useful tools. I ended up choosing the first option because I am familiar with it and it also happens to be the best option.
+
+Very cool! It added so, SO much. After manually reviewing the main files, I noted the following:
+- It's fully set up a Mongoose database connection, complete with error checking and verbose error feedback.
+- It's got nodemon and jest. Good for testing and easy development.
+- Some of the schema attributes have unforeseen/unwanted additions that I would use if I had thought of it. Nice, but that does create work.
+
+This makes me realise that I can guess how the rest of the project will go if I continue along the same route I have been traveling. Also, it's a little out of scope to set up and test a DB for a project I don't want to use after today. Perhaps in the future, I can build on it! So, for now, I want to pause the progression of this and look into other functions of this IDE. 
+
+=============================================================================================
+
+Other Things:
+- The option to include Context is nice to keep the scope of a command localized
+- The amount of Models is ridiculous
+- The Memories feature is a little... underwhelming? Obviously, it gives context and explicit rules to the AI. I'm just not sure why exactly it's needed... I guess it's useful for me to be able to change them to be more specific? Sure.
+    - My own project has a rule to Use React Router for Navigation, which I technically told it to do. 
+-  Inline Editing (crtl+k) is useful for small changes. I assume this can be replicated with the Context feature
+- Terminal AI Commands sound AWESOME! No more googling exact verbage!!
